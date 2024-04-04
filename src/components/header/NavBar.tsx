@@ -2,16 +2,17 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 	return (
-		<nav className="flex w-2/4">
-			<ul className="flex w-full justify-around">
+		<nav className="flex">
+			<ul className="flex w-full justify-around xsm:gap-2 md:gap-8">
 				<li>
-					<Link to="/">Home</Link>
+					<Link to="/about">
+						<span className="text-primary">About</span>
+					</Link>
 				</li>
 				<li>
-					<Link to="/about">About</Link>
-				</li>
-				<li>
-					<Link to="/contact">Contact</Link>
+					<Link to="/contact">
+						<span>Contact</span>
+					</Link>
 				</li>
 			</ul>
 		</nav>
