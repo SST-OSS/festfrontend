@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
 	return (
 		<nav className="flex">
-			<ul className="flex w-full justify-around xsm:gap-2 md:gap-8">
+			<ul className="flex w-full justify-around xsm:gap-2 md:gap-8 text-primary">
 				<li>
 					<Link to="/about">
-						<span className="text-primary">About</span>
+						<span>About</span>
 					</Link>
 				</li>
 				<li>

@@ -17,9 +17,15 @@ export default {
 
 		colors: {
 			primary: '#FFFFFF',
-			secondary: '',
+			secondary: '#EBCBFF',
 			background: '',
 			contrast: '',
+			grey: '#969696',
+			secondaryBackground: '#1C1C1C',
+		},
+
+		fontFamily: {
+			sans: ['Lexend', 'sans-serif'],
 		},
 
 		extend: {},
