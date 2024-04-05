@@ -26,13 +26,13 @@ const Registration = () => {
 					June, 2024
 				</div>
 
-				<div className="flex flex-col justify-center items-center h-fit xsm:mt-[150px] md:mt-[10px] xl:mt-[90px]">
+				{/* <div className="flex flex-col justify-center items-center h-fit xsm:mt-[150px] md:mt-[10px] xl:mt-[90px]">
 					<span className="text-[20px]">Powered by</span>
 					<span className="flex justify-center items-center p-2 h-fit gap-1">
 						<span className="text-[20px] ">Scaler</span>
 						<img src="/public/scaler.png" alt="Scaler" className="w-[40px] " />
 					</span>
-				</div>
+				</div> */}
 			</div>
 
 			{/* Right side */}

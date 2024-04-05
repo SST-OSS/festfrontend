@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../Logo';
+// import Logo from '../Logo';
 import NavBar from './NavBar';
 
 const Header = () => {
@@ -7,12 +7,8 @@ const Header = () => {
 		<header className="w-full backdrop-blur sticky top-0">
 			<div className="flex justify-between items-center w-[85%] mx-auto">
 				<Link to="/">
-					<Logo
-						source="https://via.placeholder.com/150"
-						alt="Yugantra"
-						width="40px"
-						height="40px"
-					/>
+					{/* <Logo source="/public/yugantaar.png" alt="Yugantra" width="360px" /> */}
+					<span className="text-3xl font-bold text-primary font-sans">Yugantra</span>
 				</Link>
 				<NavBar />
 			</div>
