@@ -6,14 +6,14 @@ const Registration = () => {
 	return (
 		<div className="text-primary flex w-full mx-auto py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000]  items-center lg:h-screen">
 			{/* Left side */}
-			<div className="flex flex-col md:w-[80%] gap-[45px] xsm:p-4 xsm:h-screen lg:h-full mt-[100px]">
+			<div className="flex flex-col lg:w-[80%] gap-[45px] xsm:p-4 xsm:h-screen lg:h-full mt-[100px] md:w-[90%]">
 				<div className="flex flex-wrap">
-					<span className="xsm:text-[45px] md:text-[85px] md:font-bold">
+					<span className="xsm:text-[45px] lg:text-[60px] xl:text-[85px] md:font-bold">
 						Scaler School of Technology's
 					</span>
 				</div>
 				<div>
-					<span className="xsm:text-[35px] md:text-[50px]">
+					<span className="xsm:text-[35px] lg:text-[40px] xl:text-[50px]">
 						Annual Technology and Cultural Fest
 					</span>
 				</div>
@@ -26,7 +26,7 @@ const Registration = () => {
 					June, 2024
 				</div>
 
-				<div className="flex flex-col justify-center items-center h-fit">
+				<div className="flex flex-col justify-center items-center h-fit xsm:mt-[150px] md:mt-[10px] xl:mt-[90px]">
 					<span className="text-[20px]">Powered by</span>
 					<span className="flex justify-center items-center p-2 h-fit gap-1">
 						<span className="text-[20px] ">Scaler</span>
