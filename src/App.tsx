@@ -8,13 +8,13 @@ import About from './view/About';
 const App = () => {
 	return (
 		<BrowserRouter>
-			<Header />
+			{/* <Header /> */}
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 };

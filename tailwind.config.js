@@ -3,22 +3,24 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		screens: {
-			xsm: '320px',
-			sm: '640px',
-
-			md: '768px',
-
-			lg: '1024px',
-
-			xl: '1280px',
-
+			'xsm': '320px',
+			'sm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
 			'2xl': '1536px',
+		},
+
+		theme: {
+			fontSize: {
+				'5xl' : '3rem'
+			},
 		},
 
 		colors: {
 			primary: '#FFFFFF',
 			secondary: '',
-			background: '',
+			background: '#000000',
 			contrast: '',
 		},
 

@@ -3,9 +3,9 @@ import Registration from '../components/home/Registration';
 
 const Home = () => {
 	return (
-		<div className="flex flex-col overflow-hidden">
+		<div className='h-full w-full bg-background'>
 			<Hero />
-			<Registration />
+			{/* <Registration /> */}
 		</div>
 	);
 };
