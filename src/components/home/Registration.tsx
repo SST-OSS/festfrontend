@@ -4,11 +4,11 @@ const Registration = () => {
 	const handleRegister = () => {};
 
 	return (
-		<div className="text-primary flex w-full mx-auto py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000]  items-center lg:h-screen">
+		<div className="text-primary flex w-full py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen">
 			{/* Left side */}
-			<div className="flex flex-col lg:w-[80%] gap-[45px] xsm:p-4 xsm:h-screen lg:h-full mt-[100px] md:w-[90%]">
+			<div className="flex flex-col lg:w-[80%] gap-[55px] p-4 xsm:h-fit lg:h-full md:w-[90%] justify-center lg:ml-[100px]">
 				<div className="flex flex-wrap">
-					<span className="xsm:text-[45px] lg:text-[60px] xl:text-[85px] md:font-bold">
+					<span className="xsm:text-[45px] lg:text-[85px] md:font-bold">
 						Scaler School of Technology's
 					</span>
 				</div>
@@ -26,18 +26,16 @@ const Registration = () => {
 					June, 2024
 				</div>
 
-				{/* <div className="flex flex-col justify-center items-center h-fit xsm:mt-[150px] md:mt-[10px] xl:mt-[90px]">
-					<span className="text-[20px]">Powered by</span>
-					<span className="flex justify-center items-center p-2 h-fit gap-1">
-						<span className="text-[20px] ">Scaler</span>
-						<img src="/public/scaler.png" alt="Scaler" className="w-[40px] " />
+				<div className="flex flex-col justify-center items-center h-fit xsm:mt-[40px]  md:mt-[10px] xl:mt-[90px]">
+					<span className="text-[20px] text-grey">
+						Powered by <span className="font-bold">SST Open Source Club</span>
 					</span>
-				</div> */}
+				</div>
 			</div>
 
 			{/* Right side */}
-			<div className="flex items-center justify-end h-full w-full">
-				<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-lg p-1 lg:w-[500px] md:mr-[100px]">
+			<div className="flex items-center justify-end h-full md:w-[40%]">
+				<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[100px]">
 					<Form
 						title="Early Registration"
 						desc="Express your early interest by registering with your email and get exlusive offer and discount."
