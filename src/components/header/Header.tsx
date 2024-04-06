@@ -14,7 +14,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 			<div className="flex justify-between items-center mx-auto w-[80%]">
 				<Link to="/" onClick={() => setIsMenuOpen(false)}>
 					<Logo
-						source="/public/logo.svg"
+						source="/logo.svg"
 						alt="Scaler Fest"
 						className="xsm:max-w-[180px] md:max-w-[250px] lg:max-w-[300px]"
 					/>
