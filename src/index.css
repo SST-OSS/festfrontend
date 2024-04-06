@@ -53,13 +53,11 @@
   }
 
   .letters {
-    flex: 1;
     display: flex;
     text-transform: uppercase;
   }
 
   .letters > div {
-    flex: 1;
     font-size: 8vw;
     font-weight: 400;
     text-align: center;
