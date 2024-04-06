@@ -1,11 +1,15 @@
 import Hero from '../components/home/Hero';
 import Registration from '../components/home/Registration';
 
-const Home = () => {
+type Props = {
+	isMenuOpen: boolean;
+};
+
+const Home = ({ isMenuOpen }: Props) => {
 	return (
 		<div className="flex flex-col overflow-hidden">
 			<Hero />
-			<Registration />
+			<Registration isMenuOpen={isMenuOpen} />
 		</div>
 	);
 };

@@ -1,6 +1,10 @@
 import Form from './Form';
 
-const Registration = () => {
+type Props = {
+	isMenuOpen: boolean;
+};
+
+const Registration = ({ isMenuOpen }: Props) => {
 	const handleRegister = () => {};
 
 	return (
@@ -34,26 +38,29 @@ const Registration = () => {
 			</div>
 
 			{/* Right side */}
-			<div className="flex items-center justify-end h-full md:w-fit lg:w-[40%]">
-				<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[70px]  lg:mr-[100px]">
-					<Form
-						title="Early Registration"
-						desc="Express your early interest by registering with your email and get exlusive offer and discount."
-						primaryField
-						button="Register Early"
-						extraFunc="How will my data be used?"
-						onSubmit={handleRegister}
-					/>
-					<Form
-						title="Ticket Less Entry Framework"
-						desc="We are working on a Ticket less entry(TLE) system which would allow you to participate in the fest without any physical or electronic ticket."
-						button="Enroll Now"
-						primaryField={false}
-						extraFunc="Read more about TLE"
-						onSubmit={handleRegister}
-					/>
+
+			{isMenuOpen ? null : (
+				<div className="flex items-center justify-end h-full md:w-fit lg:w-[40%]">
+					<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[70px]  lg:mr-[100px]">
+						<Form
+							title="Early Registration"
+							desc="Express your early interest by registering with your email and get exlusive offer and discount."
+							primaryField
+							button="Register Early"
+							extraFunc="How will my data be used?"
+							onSubmit={handleRegister}
+						/>
+						<Form
+							title="Ticket Less Entry Framework"
+							desc="We are working on a Ticket less entry(TLE) system which would allow you to participate in the fest without any physical or electronic ticket."
+							button="Enroll Now"
+							primaryField={false}
+							extraFunc="Read more about TLE"
+							onSubmit={handleRegister}
+						/>
+					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 };
