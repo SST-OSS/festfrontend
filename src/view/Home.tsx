@@ -8,8 +8,8 @@ type Props = {
 const Home = ({ isMenuOpen }: Props) => {
 	return (
 		<div className='h-full w-full bg-background'>
-			<Hero />
-			<Registration isMenuOpen={isMenuOpen} />
+			<Hero/>
+			<Registration isMenuOpen={isMenuOpen}/>
 		</div>
 	);
 };

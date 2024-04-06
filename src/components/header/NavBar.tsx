@@ -6,7 +6,7 @@ type Props = {
 
 const NavBar = ({ setIsMenuOpen }: Props) => {
 	return (
-		<nav className="flex xsm:p-4 md:p-0">
+		<nav className="flex xsm:p-4 md:p-0 z-1000">
 			<ul className="flex xsm:flex-col md:flex-row xsm:gap-10 w-full justify-around md:gap-8 text-primary text-[22px]">
 				<li>
 					<Link to="/about" onClick={() => setIsMenuOpen(false)}>

@@ -8,7 +8,7 @@ const Registration = ({ isMenuOpen }: Props) => {
 	const handleRegister = () => {};
 
 	return (
-		<div className="text-primary flex w-full py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen">
+		<div className="text-primary flex w-full py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen absolute top-[200vh] xl:top-[100vh]">
 			{/* Left side */}
 			<div className="flex flex-col lg:w-[80%] gap-[55px] p-4 xsm:h-fit lg:h-full md:w-[90%] justify-center lg:ml-[100px]">
 				<div className="flex flex-wrap">

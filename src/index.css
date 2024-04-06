@@ -16,7 +16,7 @@
     }
 
     html, body{
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Lexend';
         height: 100%;
         overflow-x: hidden;
     }
@@ -68,26 +68,26 @@
 
     .main-container{
         position: fixed;
-        overflow: none;
         top: 0;
         width: 100%;
         min-height: 100vh;
         background: black;
         clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
         transform: rotate(30deg);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-holder{
+        overflow: hidden;
     }
 
     .img-holder img{
         position: relative;
         transform: scale(2);
-        z-index: 5;
+        z-index: 2;
+        overflow: hidden;
     }
-
-    .content-holder{
-        position: relative;
-        top: 30vh;
-        width: 100%;
-        padding: 1em;
-    }
-
 }

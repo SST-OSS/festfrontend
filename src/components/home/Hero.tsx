@@ -1,14 +1,8 @@
-import Registration from "./Registration";
 import gsap from 'gsap';
-import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
-
-	
-	const ref = useRef();
-
 	const handleonload = () => {
 		const mainContentHeight = (document.querySelector('.main-container')! as HTMLElement).offsetHeight;
 		const imageHolderHeight = window.innerHeight;
@@ -46,10 +40,11 @@ const Hero = () => {
 		gsap.to(".header .letters:first-child", {
 			x: () => -innerWidth*3,
 			scale: 10,
+			opacity: 0,
 			ease: 'power2.inOut',
 			scrollTrigger: {
 				start: "top top",
-				end: "+=200%",
+				end: "+=100%",
 				scrub: 1,
 			}
 		});
@@ -59,10 +54,11 @@ const Hero = () => {
 		gsap.to(".header .letters:last-child", {
 			x: () => innerWidth*3,
 			scale: 10,
+			opacity: 0,
 			ease: 'power2.inOut',
 			scrollTrigger: {
 				start: "top top",
-				end: "+=200%",
+				end: "+=100%",
 				scrub: 1,
 			}
 		});
@@ -72,11 +68,11 @@ const Hero = () => {
 		gsap.to(".main-container",
 		{
 			rotation: 0,
-			clipPath: 'polygon(-25% -25%, 125% -25%, 125% 125%, -25% 125%)',
+			clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
 			ease: 'power2.inOut',
 			scrollTrigger: {
 				start: "top top",
-				end: "+=200%",
+				end: "+=100%",
 				scrub: 1,
 			}
 		})
@@ -117,11 +113,7 @@ const Hero = () => {
 				<div className="img-holder">
 					<img src="./herobg.png" alt="" />
 				</div>
-				<div className="content-holder z-10">
-					<Registration isMenuOpen={false}/>
-				</div>
 			</div>
-
 		</div>
 	);
 };
