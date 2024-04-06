@@ -13,8 +13,8 @@ const Registration = () => {
 					</span>
 				</div>
 				<div>
-					<span className="xsm:text-[35px] lg:text-[40px] xl:text-[50px]">
-						Annual Technology and Cultural Fest
+					<span className="xsm:text-[35px] lg:text-[55px] flex flex-col">
+						Annual Technology and <span> Cultural Fest</span>
 					</span>
 				</div>
 				<div className="text-[25px] gap-2 flex items-center">
@@ -26,16 +26,16 @@ const Registration = () => {
 					June, 2024
 				</div>
 
-				<div className="flex flex-col justify-center items-center h-fit xsm:mt-[40px]  md:mt-[10px] xl:mt-[90px]">
+				<div className="flex flex-col justify-center items-start h-fit xsm:mt-[40px]  md:mt-[0px]">
 					<span className="text-[20px] text-grey">
-						Powered by <span className="font-bold">SST Open Source Club</span>
+						powered by <span className="font-bold">SST Open Source Club</span>
 					</span>
 				</div>
 			</div>
 
 			{/* Right side */}
-			<div className="flex items-center justify-end h-full md:w-[40%]">
-				<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[100px]">
+			<div className="flex items-center justify-end h-full md:w-fit lg:w-[40%]">
+				<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[70px]  lg:mr-[100px]">
 					<Form
 						title="Early Registration"
 						desc="Express your early interest by registering with your email and get exlusive offer and discount."

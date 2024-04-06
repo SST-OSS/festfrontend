@@ -8,7 +8,7 @@ export default {
 
 			md: '1000px',
 
-			lg: '1024px',
+			lg: '1100px',
 
 			xl: '1780px',
 
@@ -22,6 +22,7 @@ export default {
 			contrast: '',
 			grey: '#969696',
 			secondaryBackground: '#1C1C1C',
+			bluebg: '#CBE3FF',
 		},
 
 		fontFamily: {
