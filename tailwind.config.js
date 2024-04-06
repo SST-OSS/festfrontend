@@ -15,6 +15,12 @@ export default {
 			'2xl': '1286px',
 		},
 
+		theme: {
+			fontSize: {
+				'5xl' : '3rem'
+			},
+		},
+
 		colors: {
 			primary: '#FFFFFF',
 			secondary: '#EBCBFF',

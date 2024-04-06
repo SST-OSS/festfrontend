@@ -7,9 +7,9 @@ type Props = {
 
 const Home = ({ isMenuOpen }: Props) => {
 	return (
-		<div className="flex flex-col overflow-hidden">
-			<Hero />
-			<Registration isMenuOpen={isMenuOpen} />
+		<div className='h-full w-full bg-background'>
+			<Hero/>
+			<Registration isMenuOpen={isMenuOpen}/>
 		</div>
 	);
 };

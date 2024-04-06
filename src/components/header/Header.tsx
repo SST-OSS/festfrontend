@@ -10,7 +10,7 @@ type Props = {
 
 const Header = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 	return (
-		<header className="w-full backdrop-blur fixed top-0 xsm:p-1  md:p-2">
+		<header className="w-full backdrop-blur fixed top-0 xsm:p-1  md:p-2 z-10">
 			<div className="flex justify-between items-center mx-auto w-[80%]">
 				<Link to="/" onClick={() => setIsMenuOpen(false)}>
 					<Logo
