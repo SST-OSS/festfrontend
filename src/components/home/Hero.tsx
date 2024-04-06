@@ -118,7 +118,7 @@ const Hero = () => {
 					<img src="./herobg.png" alt="" />
 				</div>
 				<div className="content-holder z-10">
-					<Registration/>
+					<Registration isMenuOpen={false}/>
 				</div>
 			</div>
 

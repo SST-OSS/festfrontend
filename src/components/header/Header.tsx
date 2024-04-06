@@ -1,21 +1,45 @@
 import { Link } from 'react-router-dom';
-import Logo from '../Logo';
+// import Logo from '../Logo';
 import NavBar from './NavBar';
+import Logo from '../Logo';
 
-const Header = () => {
+type Props = {
+	isMenuOpen: boolean;
+	setIsMenuOpen: (value: boolean) => void;
+};
+
+const Header = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 	return (
-		<header className="w-full backdrop-blur sticky top-0">
-			<div className="flex justify-between items-center w-[85%] mx-auto">
-				<Link to="/">
+		<header className="w-full backdrop-blur fixed top-0 xsm:p-1  md:p-2">
+			<div className="flex justify-between items-center mx-auto w-[80%]">
+				<Link to="/" onClick={() => setIsMenuOpen(false)}>
 					<Logo
-						source="https://via.placeholder.com/150"
-						alt="Yugantra"
-						width="40px"
-						height="40px"
+						source="/logo.svg"
+						alt="Scaler Fest"
+						className="xsm:max-w-[180px] md:max-w-[250px] lg:max-w-[300px]"
 					/>
 				</Link>
-				<NavBar />
+				<button
+					className="xsm:flex md:hidden"
+					onClick={() => setIsMenuOpen(!isMenuOpen)}
+				>
+					{isMenuOpen ? (
+						<i className="fa-solid fa-times text-primary text-2xl"></i>
+					) : (
+						<i className="fa-solid fa-bars text-primary text-2xl"></i>
+					)}
+				</button>
+
+				<nav className="hidden md:flex">
+					<NavBar setIsMenuOpen={setIsMenuOpen} />
+				</nav>
 			</div>
+
+			{isMenuOpen ? (
+				<div className="top-[65px] z-10 h-screen bg-background w-full overflow-y-scroll flex flex-col items-center justify-start">
+					<NavBar setIsMenuOpen={setIsMenuOpen} />
+				</div>
+			) : null}
 		</header>
 	);
 };

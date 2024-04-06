@@ -1,19 +1,13 @@
 type Props = {
 	source: string;
 	alt: string;
-	width?: string;
-	height?: string;
+	className?: string;
 };
 
 const Logo = (props: Props) => {
 	return (
 		<div>
-			<img
-				src={props.source}
-				alt={props.alt}
-				width={props.width}
-				height={props.height}
-			/>
+			<img src={props.source} alt={props.alt} className={props.className} />
 		</div>
 	);
 };
