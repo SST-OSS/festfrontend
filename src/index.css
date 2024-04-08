@@ -2,143 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
 @layer base {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
-  html {
-    overscroll-behavior: none;
-    background: black;
-  }
+	html {
+		overscroll-behavior: none;
+		background: black;
+	}
 
-  html,
-  body {
-    font-family: "Lexend";
-    height: 100%;
-    overflow-x: hidden;
-  }
+	html,
+	body {
+		font-family: 'Lexend';
+		height: 100%;
+		overflow-x: hidden;
+	}
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
+	::-webkit-scrollbar {
+		display: none;
+	}
 
-  h1 {
-    font-size: 80px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
-  }
+	h1 {
+		font-size: 80px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+	}
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 
-  .main {
-    height: 100vh;
-  }
+	.main {
+		height: 100vh;
+	}
 
-  .header {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 100%;
-    z-index: 5;
-  }
+	.header {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		width: 100%;
+		z-index: 5;
+	}
 
-  .letters {
-    display: flex;
-    text-transform: uppercase;
-  }
+	.letters {
+		display: flex;
+		text-transform: uppercase;
+	}
 
-  .letters > div {
-    font-size: 8vw;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-  }
+	.letters > div {
+		font-size: 8vw;
+		font-weight: 400;
+		text-align: center;
+		color: white;
+	}
 
-  .main-container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: black;
-    clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
-    transform: rotate(30deg);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	.main-container {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		min-height: 100vh;
+		background: black;
+		clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
+		transform: rotate(30deg);
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .img-holder {
-    overflow: hidden;
-  }
+	.img-holder {
+		overflow: hidden;
+	}
 
-  .img-holder img {
-    position: relative;
-    transform: scale(2);
-    z-index: 2;
-    overflow: hidden;
-  }
+	.img-holder img {
+		position: relative;
+		transform: scale(2);
+		z-index: 2;
+		overflow: hidden;
+	}
 }
 
 .container {
-  position: absolute;
-  /* top: -100px; */
-  overflow: hidden;
+	position: absolute;
+	/* top: -100px; */
+	overflow: hidden;
 }
 .blob {
-  position: fixed;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  filter: blur(150px);
-  animation: rotateBlobs 10s linear infinite;
-  overflow: hidden;
+	position: fixed;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	filter: blur(150px);
+	animation: rotateBlobs 10s linear infinite;
+	overflow: hidden;
 }
 
 .blob1 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(180deg); /* Start the blob facing upwards */
-  background-color: rgba(235, 203, 255, 0.46);
-  animation: rotateAndRevolveBlob1 10s linear infinite;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(180deg); /* Start the blob facing upwards */
+	background-color: rgba(235, 203, 255, 0.46);
+	animation: rotateAndRevolveBlob1 10s linear infinite;
 }
 
 .blob2 {
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%); /* Start the blob facing downwards */
-  background-color: rgba(203, 227, 255, 0.47);
-  animation: rotateAndRevolveBlob2 10s linear infinite;
+	bottom: 50%;
+	right: 50%;
+	transform: translate(50%, 50%); /* Start the blob facing downwards */
+	background-color: rgba(203, 227, 255, 0.47);
+	animation: rotateAndRevolveBlob2 10s linear infinite;
 }
 
 @keyframes rotateAndRevolveBlob1 {
-  0% {
-    transform: rotate(0deg) translate(calc(-50vw + 50%), calc(-50vh + 50%))
-      rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(calc(-50vw + 50%), calc(-50vh + 50%))
-      rotate(-360deg);
-  }
+	0% {
+		transform: rotate(0deg) translate(calc(-50vw + 50%), calc(-50vh + 50%))
+			rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translate(calc(-50vw + 50%), calc(-50vh + 50%))
+			rotate(-360deg);
+	}
 }
 
 @keyframes rotateAndRevolveBlob2 {
-  0% {
-    transform: rotate(0deg) translate(calc(50vw - 100%), calc(50vh - 100%))
-      rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(calc(50vw - 100%), calc(50vh - 100%))
-      rotate(-360deg);
-  }
+	0% {
+		transform: rotate(0deg) translate(calc(50vw - 100%), calc(50vh - 100%))
+			rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translate(calc(50vw - 100%), calc(50vh - 100%))
+			rotate(-360deg);
+	}
 }
