@@ -18,14 +18,6 @@ const NavBar = ({ setIsMenuOpen }: Props) => {
 						<span>Contact</span>
 					</Link>
 				</li>
-				<li>
-					<span
-						className="bg-bluebg p-2 rounded-lg text-secondaryBackground"
-						onClick={() => setIsMenuOpen(false)}
-					>
-						Brochure
-					</span>
-				</li>
 			</ul>
 		</nav>
 	);
