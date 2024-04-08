@@ -1,5 +1,4 @@
 import AboutContainer from '../components/about/AboutContainer';
-// import { TracingBeam } from '../components/ui/tracing-beams';
 
 const About = () => {
 	return (
@@ -17,18 +16,37 @@ const About = () => {
 				image="G1.jpeg"
 				positionText="left"
 			/>
-			We strive to create two days of immersive experiences that leave a lasting
-			impression. Our fest is a tapestry woven with passionate competitions,
-			interactive games, and activities that spark joy and camaraderie. We’re a
-			stage for renowned artists, a venue for electrifying concerts, and a haven
-			for soothing nightlife. We’ve built a legacy that resonates with the essence
-			of Yugaantar. We’ve witnessed the magic of performances that have captivated
-			hearts and celebrated the spirit of exploration and self-expression. Our fest
-			is more than just a gathering; it’s a journey that etches indelible memories
-			in the hearts of all who partake in its enchantment. Join us at theYugaantar
-			, where dreams take flight, and every moment is a step towards the
-			extraordinary.
-			{/* <BackgroundBeams /> */}
+
+			<div className="flex flex-col text-primary font-sans gap-5">
+				<div className="md:text-[20px] xsm:text-[18px]">
+					We strive to create two days of immersive experiences that leave a lasting
+					impression. Our fest is a tapestry woven with passionate competitions,
+					interactive games, and activities that spark joy and camaraderie. We’re a
+					stage for renowned artists, a venue for electrifying concerts, and a haven
+					for soothing nightlife. We’ve built a legacy that resonates with the
+					essence of Yugaantar.
+				</div>
+
+				<div className="md:text-[20px] xsm:text-[18px]">
+					We’ve witnessed the magic of performances that have captivated hearts and
+					celebrated the spirit of exploration and self-expression. Our fest is more
+					than just a gathering; it’s a journey that etches indelible memories in the
+					hearts of all who partake in its enchantment. Join us at theYugaantar ,
+					where dreams take flight, and every moment is a step towards the
+					extraordinary.
+				</div>
+
+				<div className="md:text-[20px] xsm:text-[18px]">
+					We welcome you to the Scaler School of Technology Fest, where the future is
+					celebrated and the spirit of innovation is honored. Our fest is a testament
+					to the vibrant energy that drives our institution, and we’re excited to
+					share it with you. Join us for a weekend of fun, learning, and networking
+					as we come together to celebrate the magic of technology and the power of
+					community.
+				</div>
+
+				<img src="/Big2.jpeg" alt="G3" className="w-full h-full object-cover" />
+			</div>
 		</div>
 	);
 };
