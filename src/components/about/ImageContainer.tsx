@@ -4,7 +4,7 @@ type Props = {
 
 const ImageContainer = (props: Props) => {
 	return (
-		<div className="w-[40%]">
+		<div className="md:w-[40%] xsm:w-full">
 			<img src={props.src} alt="image" />
 		</div>
 	);
