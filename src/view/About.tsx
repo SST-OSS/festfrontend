@@ -1,10 +1,11 @@
 import AboutContainer from '../components/about/AboutContainer';
+import { BackgroundBeams } from '../components/ui/background-beams';
+// import { TracingBeam } from '../components/ui/tracing-beams';
 
 const About = () => {
 	return (
 		<div className="flex flex-col gap-10 min-h-screen items-center w-[85%] p-5 mx-auto lg:mt-[75px]">
-			<div className="blob blob1"></div>
-			<div className="blob blob2"></div>
+			<BackgroundBeams />
 			<AboutContainer
 				heading="Scaler School of Technology Fest"
 				text1="Welcome to the Scaler School of Technology, where innovation meets tradition, and the future is shaped by the leaders of tomorrow. Our fest is not just an event; it’s a celebration of the vibrant spirit that drives our institution."
