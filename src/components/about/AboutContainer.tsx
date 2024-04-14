@@ -13,7 +13,7 @@ const AboutContainer = (props: Props) => {
 	return (
 		<div className="z-10">
 			{props.positionText === 'left' ? (
-				<div className="flex gap-10 xsm:flex-col md:flex-row w-full h-fit my-5">
+				<div className="flex gap-10 xsm:flex-col md:flex-row items-center justify-center w-full h-fit my-5">
 					<TextContainer
 						heading={props.heading}
 						text1={props.text1}
@@ -22,7 +22,7 @@ const AboutContainer = (props: Props) => {
 					<ImageContainer src={props.image} />
 				</div>
 			) : (
-				<div className="flex gap-10 xsm:flex-col md:flex-row w-full h-fit my-5">
+				<div className="flex gap-10 xsm:flex-col md:flex-row items-center justify-center  w-full h-fit my-5">
 					<ImageContainer src={props.image} />
 					<TextContainer
 						heading={props.heading}
