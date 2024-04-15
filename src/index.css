@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -72,10 +71,8 @@
 
 	.main-container {
 		position: fixed;
-		top: 0;
 		width: 100%;
 		min-height: 100vh;
-		background: black;
 		clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
 		transform: rotate(30deg);
 		overflow: hidden;
@@ -86,12 +83,13 @@
 
 	.img-holder {
 		overflow: hidden;
+		top: 100vh;
 	}
-
 	.img-holder img {
 		position: relative;
-		transform: scale(2);
+		transform: scale(1);
 		z-index: 2;
+		opacity: 0;
 		overflow: hidden;
 	}
 }
@@ -110,12 +108,11 @@
 	animation: rotateBlobs 10s linear infinite;
 	overflow: hidden;
 }
-
 .blob1 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) rotate(180deg); /* Start the blob facing upwards */
-	background-color: rgba(235, 203, 255, 0.46);
+	background-color: #40c6f38f;
 	animation: rotateAndRevolveBlob1 10s linear infinite;
 }
 
@@ -123,7 +120,7 @@
 	bottom: 50%;
 	right: 50%;
 	transform: translate(50%, 50%); /* Start the blob facing downwards */
-	background-color: rgba(203, 227, 255, 0.47);
+	background-color: #d3ff3698;
 	animation: rotateAndRevolveBlob2 10s linear infinite;
 }
 

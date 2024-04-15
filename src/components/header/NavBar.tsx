@@ -18,6 +18,13 @@ const NavBar = ({ setIsMenuOpen }: Props) => {
 						<span>Contact</span>
 					</Link>
 				</li>
+				<li className="">
+					<a href="#register" onClick={() => setIsMenuOpen(false)}>
+						<span className="bg-neon p-2 rounded-lg text-secondaryBackground">
+							Register
+						</span>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

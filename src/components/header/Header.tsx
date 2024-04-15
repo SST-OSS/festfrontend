@@ -16,7 +16,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 					<Logo
 						source="/logo.svg"
 						alt="Scaler Fest"
-						className="xsm:max-w-[180px] md:max-w-[250px] lg:max-w-[300px]"
+						className="xsm:w-[180px] md:w-[350px] lg:w-[300px]"
 					/>
 				</Link>
 				<button

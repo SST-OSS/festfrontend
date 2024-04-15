@@ -23,6 +23,7 @@ export default {
 			grey: '#969696',
 			secondaryBackground: '#1C1C1C',
 			bluebg: '#CBE3FF',
+			neon: '#D3F941',
 		},
 		fontFamily: {
 			sans: ['Lexend', 'sans-serif'],
