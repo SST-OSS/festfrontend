@@ -1,17 +1,20 @@
-import Hero from '../components/home/Hero';
-import Registration from '../components/home/Registration';
+import Hero from "../components/home/Hero";
+import Registration from "../components/home/Registration";
+import Teaser from "../components/home/Teaser";
 
 type Props = {
-	isMenuOpen: boolean;
+  isMenuOpen: boolean;
 };
-
 const Home = ({ isMenuOpen }: Props) => {
-	return (
-		<div className='h-full w-full bg-background'>
-			<Hero/>
-			<Registration isMenuOpen={isMenuOpen}/>
-		</div>
-	);
+  return (
+    <div className=" bg-background">
+      <Hero />
+      <Teaser />
+      <div className="flex flex-col">
+        <Registration isMenuOpen={isMenuOpen} />
+      </div>
+    </div>
+  );
 };
 
 export default Home;
