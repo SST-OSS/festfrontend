@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { registerUser } from '../../apis/Registration';
 import Form from './Form';
 
 type Props = {
@@ -5,8 +7,26 @@ type Props = {
 };
 
 const Registration = ({ isMenuOpen }: Props) => {
-	const handleRegister = () => {};
-	const handleTicketLessRegister = () => {};
+	const [email, setEmail] = useState('');
+
+	const validatedEmail = (email: string) => {
+		const re = /\S+@\S+\.\S+/;
+		return re.test(email);
+	};
+
+	const handleRegister = async () => {
+		if (!validatedEmail(email)) {
+			alert('Invalid email');
+			return;
+		}
+		console.log(email);
+		const res = await registerUser(email);
+		if (res === 'success') {
+			alert('Registration successful');
+		} else {
+			alert('Registration failed');
+		}
+	};
 
 	return (
 		<div className="text-primary flex w-full py-[35px] xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen absolute top-[175vh] sm:top-[200vh]">
@@ -53,14 +73,8 @@ const Registration = ({ isMenuOpen }: Props) => {
 							button="Register Early"
 							extraFunc="How will my data be used?"
 							onSubmit={handleRegister}
-						/>
-						<Form
-							title="Ticket Less Entry Framework"
-							desc="We are working on a Ticket less entry(TLE) system which would allow you to participate in the fest without any physical or electronic ticket."
-							button="Enroll Now"
-							primaryField
-							extraFunc="Read more about TLE"
-							onSubmit={handleTicketLessRegister}
+							email={email}
+							setEmail={setEmail}
 						/>
 					</div>
 				</div>

@@ -137,11 +137,11 @@
 
 @keyframes rotateAndRevolveBlob2 {
 	0% {
-		transform: rotate(0deg) translate(calc(50vw - 100%), calc(50vh - 100%))
+		transform: rotate(0deg) translate(calc(50vw - 80%), calc(50vh - 100%))
 			rotate(0deg);
 	}
 	100% {
-		transform: rotate(360deg) translate(calc(50vw - 100%), calc(50vh - 100%))
+		transform: rotate(360deg) translate(calc(50vw - 80%), calc(50vh - 100%))
 			rotate(-360deg);
 	}
 }
