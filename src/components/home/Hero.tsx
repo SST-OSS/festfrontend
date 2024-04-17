@@ -112,7 +112,7 @@ const Hero = () => {
 			</div>
 			<div className="main-container z-10">
 				<div className="img-holder xsm:w-full md:w-[80%]">
-					<img src="./hero.svg" alt="hero" className="md:w-full" />
+					<img src="./hero.svg" alt="hero" className="w-full" />
 				</div>
 			</div>
 		</div>
