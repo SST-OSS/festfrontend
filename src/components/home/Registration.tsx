@@ -28,7 +28,7 @@ const Registration = ({ isMenuOpen }: Props) => {
 	};
 
 	return (
-		<div className="text-primary flex w-full xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen top-[280vh] lg:top-[430vh] absolute">
+		<div className="text-primary flex w-full xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen top-[280vh] lg:top-[450vh] md:top-[400vh] absolute">
 			<div className="blob blob1"></div>
 			<div className="blob blob2"></div>
 

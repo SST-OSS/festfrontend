@@ -20,7 +20,7 @@ const NavBar = ({ setIsMenuOpen }: Props) => {
 				</li>
 				<li className="">
 					<a href="#register" onClick={() => setIsMenuOpen(false)}>
-						<span className="bg-neon p-2 rounded-lg text-secondaryBackground">
+						<span className="bg-neon p-2 rounded-xl text-secondaryBackground">
 							Register
 						</span>
 					</a>

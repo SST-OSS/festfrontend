@@ -93,8 +93,8 @@ const Hero = () => {
 	});
 
 	return (
-		<div className="main bg-background" onLoad={handleonload}>
-			<div className="header xsm:gap-8 sm:gap-16  md:gap-32 justify-center z-20">
+		<div className="main bg-background overflow-x-hidden" onLoad={handleonload}>
+			<div className="header xsm:gap-8 sm:gap-16  md:gap-32 justify-center overflow-hidden">
 				<div className="letters xsm:gap-4 sm:gap-6  md:gap-10">
 					<div>C</div>
 					<div>O</div>
