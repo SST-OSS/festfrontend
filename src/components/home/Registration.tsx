@@ -28,19 +28,14 @@ const Registration = ({ isMenuOpen }: Props) => {
 	};
 
 	return (
-		<div className="text-primary flex w-full xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row bg-[#000000] lg:h-screen top-[280vh] lg:top-[450vh] md:top-[400vh] absolute">
-			<div className="blob blob1"></div>
-			<div className="blob blob2"></div>
-
+		<div className="text-primary flex w-full xsm:p-0 md:p-5 lg:p-[35px] xsm:flex-col md:flex-row mt-[10vh]">
 			{/* Left side */}
-			<div className="flex flex-col lg:w-[80%] gap-[55px] p-4 xsm:h-fit lg:h-full md:w-[90%] justify-center lg:ml-[100px]">
-				<div className="flex flex-wrap">
-					<span className="xsm:text-[45px] lg:text-[85px] md:font-bold">
-						Scaler School of Technology's
-					</span>
+			<div className="flex flex-col lg:w-[80%] gap-[55px] p-4 xsm:h-fit lg:h-full md:w-[90%] justify-center lg:ml-[100px] overflow-hidden">
+				<div className="flex md:w-[40%]">
+					<img src="SST_Logo.svg" alt="logo" className="w-full" />
 				</div>
 				<div>
-					<span className="xsm:text-[35px] lg:text-[55px] flex flex-col">
+					<span className="xsm:text-[35px] lg:text-[40px] flex flex-col">
 						Annual Technology and <span> Cultural Fest</span>
 					</span>
 				</div>
@@ -63,8 +58,8 @@ const Registration = ({ isMenuOpen }: Props) => {
 			{/* Right side */}
 
 			{isMenuOpen ? null : (
-				<div className="flex items-center justify-end h-full md:w-fit lg:w-[40%] z-30">
-					<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[500px] md:mr-[70px]  lg:mr-[100px]">
+				<div className="flex items-center justify-end h-full xsm:w-[90%] lg:w-[60%] z-30 my-auto xsm:mx-auto xsm:mb-5">
+					<div className=" bg-secondaryBackground opacity-85 flex flex-col gap-[25px] h-fit xsm:w-full rounded-xl p-1 lg:w-[700px] md:mr-[70px] lg:mr-[100px]">
 						<Form
 							title="Early Registration"
 							desc="Express your early interest by registering with your email and get exlusive offer and discount."

@@ -1,12 +1,36 @@
+import { useEffect, useState } from 'react';
 import ContactContainer from '../components/contactus/ContactContainer';
 
 const Contact = () => {
+	function getWindowDimensions() {
+		const { innerWidth: width, innerHeight: height } = window;
+		return {
+			width,
+			height,
+		};
+	}
+
+	const [windowDimensions, setWindowDimensions] = useState(
+		getWindowDimensions()
+	);
+
+	const left = windowDimensions.width < 768 ? 'left' : 'left';
+	const right = windowDimensions.width < 768 ? 'left' : 'right';
+
+	useEffect(() => {
+		function handleResize() {
+			setWindowDimensions(getWindowDimensions());
+		}
+
+		window.addEventListener('resize', handleResize);
+	}, []);
+
 	return (
 		<div className="flex flex-col gap-10 min-h-screen items-center xsm:w-full w-full mx-auto mt-[20vh]">
 			<div className="blob blob1"></div>
 			<div className="blob blob2"></div>
 			<ContactContainer
-				positionText="right"
+				positionText={right}
 				heading="President Student Council"
 				description="For more information about fest contact"
 				name="Gowtham Sai Yadav"
@@ -15,7 +39,7 @@ const Contact = () => {
 			/>
 
 			<ContactContainer
-				positionText="left"
+				positionText={left}
 				heading="Marketing Head"
 				description="If you want to sponsor our event contact"
 				name="Varun Deep Saini"
@@ -24,7 +48,7 @@ const Contact = () => {
 			/>
 
 			<ContactContainer
-				positionText="right"
+				positionText={right}
 				heading="Events Head"
 				description="If you want more information about events contact"
 				name="Shreshtha Sharma"
@@ -33,7 +57,7 @@ const Contact = () => {
 			/>
 
 			<ContactContainer
-				positionText="left"
+				positionText={left}
 				heading="Tech Head"
 				description="If you are facing any issues with the website contact"
 				name="Abhinav Gupta"
